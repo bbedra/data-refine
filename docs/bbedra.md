@@ -57,6 +57,9 @@ Wynik:
 ```
 
 ### Liczba lotnisk wg typów, malejąco
+
+![Wykres](https://github.com/nosql/map-reduce/master/images/bbedra/liczba_lotnisk.png)
+
 ```
 	db.lotniska.aggregate( 
 		{ $group : { _id : "$type", ilosc : { $sum : 1}}},
